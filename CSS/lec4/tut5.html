@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<style>
+    .box
+    {
+        height: 1000px;
+    }
+    .container
+    {
+        height: 5000px;
+        background-color: aqua;
+    }
+    img{
+        margin: 10px;
+        width: 300px; 
+        height: 200px;
+    }
+    .img2{
+        position: fixed;
+        left: 300px;
+    }
+    .img3{
+        position: sticky;
+        top: 300px;
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+        <img src="image1.jpg" alt="image1" class="img1"/>
+        <img src="image2.jpg" alt="image2" class="img2"/>
+        <img src="image3.jpg" alt="image3" class="img3"/>
+    </div>
+    <div class="box">
+
+    </div>
+        
+    
+</body>
+</html>

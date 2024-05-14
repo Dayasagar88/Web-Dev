@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Modal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+
+
+        <!-- content_div -->
+        <div class="main-div">
+            <div class="image-div rounded-">
+                <img class="my-img" src="MY image.jpg" width="200px" alt="">
+            </div>
+
+            <h1 class="name-tag">Daya Sagar</h1>
+            <h3 class="profession">Student,ADGIPS</h3>
+
+
+            <!-- button_div -->
+            <div class="btn-div">
+                <button onclick="openModal()" class="btn btn-1"><i class="fa-solid mr-1 fa-share"></i>Share My Profile</button>
+                <button onclick="openModal2()" class="btn btn-2">Follow Me</button>
+            </div>
+        </div>
+
+
+
+        <div class="modal-div">
+            <div class="heading">
+                <h1 class="my-profile">Share My Profile</h1>
+                <i onclick="closeModal()" class="cross fa-solid fa-x"></i>
+            </div>
+
+            <h3 class="sub-heading">Share Via :
+
+            </h3>
+
+            <div class="links-div">
+                <a href="#">
+                    <i class=" link-icon fa-brands fa-facebook" style="color: #74C0FC;"></i>
+                </a>
+
+                <a href="#">
+                    <i class="link-icon fa-brands fa-twitter" style="color: #74C0FC;"></i>
+                </a>
+
+                <a href="#">
+                    <i class="link-icon fa-brands fa-instagram fa-flip-horizontal" style="color: #ce124b;"></i>
+                </a>
+
+                <a href="#">
+                    <i class="link-icon hide fa-brands fa-whatsapp" style="color: #27d352;"></i>
+                </a>
+
+                <a href="#">
+                    <i class="link-icon hide2 fa-brands fa-telegram" style="color: #1f7bc1;"></i>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+        <div onclick="closeModal()" class="overlay"></div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index2.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.cont_last{
+    background: rgb(88,157,215);
+    background: linear-gradient(180deg, rgba(88,157,215,1) -63%, rgba(3,1,14,0) 96%);
+}
+
+.boxes{
+    transition: all .2s ease;
+}
+
+.boxes:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.content_box2{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: solid 1px rgba(4, 67, 97, 0.521);
+}
+
+.corefeaturesection{
+    background-size: 100% 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.move_company{
+    animation: movecompany infinite linear  15s;
+}
+
+@keyframes movecompany{
+    0%{
+        transform: translatey(0);
+    }
+
+    100%{
+        transform: translatey(-50%);
+    }
+}
+.gradient1{
+    box-shadow: 0px 20px 10px -20px rgba(0,0,0,0.45) inset,
+    5px -17px 207px 14px rgba(244,248,255,1) inset;
+}
+

@@ -1,0 +1,62 @@
+body{
+    background-color: #13121290;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    overflow-y: hidden;
+}
+/* button{
+    border: none;
+    background-color: blueviolet;
+    color: rgb(13, 11, 12);
+    font: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.3s 0s ease-in;
+    
+}
+h1{
+    display: inline;
+    background: #000;
+    color: wheat ;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background: #000;
+    color: white;
+}
+button:active{
+    scale: 0.9;
+} */ 
+
+.box{
+    /* display: inline; */
+    background: #000;
+    color: bisque;
+    height: 20px;
+    margin: 2px;
+    min-width: 100px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

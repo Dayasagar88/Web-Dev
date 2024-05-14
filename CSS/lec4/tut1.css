@@ -1,0 +1,14 @@
+body{
+    font-style: italic;
+    background-color: orange;
+}
+
+h1{
+    font-size: larger;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    color: darkblue;
+    background-color: chocolate;
+}

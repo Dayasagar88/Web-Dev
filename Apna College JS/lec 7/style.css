@@ -1,0 +1,18 @@
+
+.para1{
+    background: #000;
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    color: white;
+}
+.newpara{
+    background: white;
+    color: rgb(27, 199, 11);
+    background-color: rgb(7, 7, 78);
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    /* padding: 80px; */
+    /* height: 100vh; */
+}

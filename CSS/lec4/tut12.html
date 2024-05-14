@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:rgba(2, 0, 14, 0.557);
+            --custom-width:300px;
+        }
+        .container{
+            background-color: rgb(36, 121, 93);
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: var(--custom-width);
+            height: 350px;
+            background-color: cornflowerblue;
+            border: 2px var(--primary-color) solid;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 20px 20px 25px ; */
+            /* box-shadow: 20px 20px 25px 10px orange; */
+            /* box-shadow: inset 10px 10px 50px 10px yellow; */
+            box-shadow: 10px 10px 20px rgb(37, 192, 239), 15px 15px 25px rgb(97, 14, 231);
+        }
+        h2{
+            text-shadow: 10px -5px 5px  rgb(11, 11, 168);
+            /* text-shadow: rgb(7, 6, 4) 1px 0 10px; */
+            /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="https://labs.thecodehelp.in/quick-compiler/codehelp-labs.svg" width="300px" alt="codehelp">
+        <h2>Welcome To CodeHelp</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed libero ad minima quod maiores natus amet modi fuga nesciunt recusandae?</p>
+        </div>
+    </div>
+</body>
+</html>

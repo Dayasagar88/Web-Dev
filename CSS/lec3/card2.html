@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #FF3CAC;
+            background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 350px;
+            height: 550px;
+            /* border: solid 1px; */
+            border-radius: 20px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+        .card img{
+            width: 100%;
+            height: 35%;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+        .card p{
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .amountbox{
+            background-color: #2b85c5ce;
+            width: 80%;
+            height: 10%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .leftbox{
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+        }
+        .rightbox button{
+            text-decoration: none;
+            border: solid 0px black;
+            background-color: #1d0b63;
+            border-radius: 5px;
+            color: white;
+            padding: 8px;
+            transition: all .4s 0s linear;
+        }
+       .imgbox{
+            height: 4.5rem;
+            width: 2rem;
+            display: flex;
+            align-items: center;
+       }
+        #paymentbutton{
+            height: 8%;
+            width: 80%;
+            border-radius: 10px;
+            background-color: rgb(16, 16, 87);
+            color: azure;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            transition: all .4s 0s linear;
+        }
+        .cancelbox a{
+            text-decoration: none;
+            color: rgb(31, 8, 117);
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .cancelbox{
+            transition: all .4s 0s linear;
+        }
+        .rightbox button:hover{
+            transform: scale(1.1);
+        }
+        .cancelbox:hover{
+            transform: scale(1.1);
+        }
+        #paymentbutton:hover{
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1433737803/photo/listening-to-music-on-a-mobile-phone-music-player-with-headphones-3d-rendering-music.webp?b=1&s=170667a&w=0&k=20&c=IkaWmoA4Xq1f29VfAdEjvgq4kJyu4BeJlwgPQ4w2Jcw=" alt="">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a ducimus porro, ab rem dolores tenetur sequi similique ratione cumque?</p>
+
+            <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="3844724.png" alt="">
+                    </div>
+                    <div class="textprice">
+                        <p>Annual Plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div class="rightbox">
+                    <button>Change Plan</button>
+                </div>
+            </div>
+
+            <button id="paymentbutton">Proceed To Payment</button>
+
+            <div class="cancelbox">
+                <a href="">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>         

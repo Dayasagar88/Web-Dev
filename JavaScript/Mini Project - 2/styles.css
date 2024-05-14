@@ -1,0 +1,121 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(63,251,167,1) 0%, rgba(54,10,22,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3ffba7",endColorstr="#360a16",GradientType=1);
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    place-items: center;
+}
+
+.game-info{
+    border: 1px solid rgba(255, 255, 255, 0.111);
+    padding: 10px 35px;
+    background: rgba(255, 255, 255, 0.111);
+    color: rgb(8, 8, 8);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    border-radius: 18px;
+}
+.tic-tac-toe{
+    /* position: sticky; */
+    width: 90%;
+    max-width: 20rem;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid rgba(255, 255, 255, 0.111);
+    background: rgba(255, 255, 255, 0.111);
+    color: rgba(15, 13, 13, 0.858);
+    padding: 2rem;
+    border-radius: 18px;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 1/1;
+    /* padding: 1.5rem 2rem; */
+    font-size: 3rem;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box1 , .box2 , .box4, .box5{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid black;
+}
+
+.box7, .box8{
+    border-right: 2px solid black;
+}
+
+.btn{
+    /* position: absolute;
+    bottom: 3rem; */
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.111);
+    border: 1px solid rgba(255, 255, 255, 0.111);
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 18px;
+    cursor: pointer;
+    display: none;
+    transition: all .2s ease;
+}
+
+.btn:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: #ffffff79;
+}
+.btn:active{
+    /* background-color: red; */
+    scale: .8;
+}
+
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background: #30a04ac9;
+    /* border-radius: 50%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        "use strict";
+        let a, b;
+         a = 10;
+         b = 20;
+         console.log(a+b);
+
+         function Hello(){
+            console.log("Hello Daya");
+         }
+
+
+         let object1 = {
+            a : "Sagar",
+            b : "Daya",
+
+            func : function myFunc(number){
+                console.log("The number is "+ number);
+            }
+         }
+
+         document.addEventListener("click", function click(){
+            console.log('Clicked');
+            alert("clicked on document");
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+         })
+
+
+        //  for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+            
+        //  }
+         let arr = [3, 34, 56];
+
+         arr.forEach(element => {
+            console.log(element);
+         });
+
+        
+         let myObj = {
+            a : this,
+            arrFunc : (number) => {
+            console.log("This number is"+this);
+            }    
+         }
+         myObj.arrFunc();
+         console.log(myObj.a)
+
+
+    </script>
+</head>
+<body>
+    <h1>
+        I am Learning React Js
+    </h1>
+</body>
+</html>

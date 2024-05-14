@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+
+    <!-- <style>
+        table,tr,td,th{
+            border: 3px solid brown;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Saving</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>800</td>
+            </tr>
+        </tfoot>
+    </table> -->
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            caption-side: bottom;
+        
+        }
+    </style>
+
+    <table>
+        <caption>Table 1</caption>
+        <tr>
+            <td colspan="2">ABCD</td>
+            <!-- <td>ABCD</td> -->
+            <td>ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td>ABCD</td>
+            <td>ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td>ABCD</td>
+            <td>ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td rowspan="2" colspan="2">ABCD</td>
+            <!-- <td>ABCD</td> -->
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <!-- <td>ABCD</td> -->
+            <!-- <td>ABCD</td> -->
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- <table>
+        <caption>Table 2</caption>
+            <tr>
+            <th rowspan="2">State of Health</th>
+            <th colspan="2">Fasting value</th>
+            <th>After Eating</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>Minimum</td>
+                <td>Maximum</td>
+                <td>2 Hours After Eating</td>
+            </tr>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less then 140</td>
+            </tr>
+            <tr>
+                <td>Pre-DIABETIC</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 TO 200</td>
+            </tr>
+            <tr>
+                <td>Diabeties</td>
+                <td>More then 126</td>
+                <td>N/A</td>
+                <td>More than 200</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <table>
+
+        <colgroup>
+            <col span="">
+            <col span="5" style="background-color: green;">
+        </colgroup>
+
+        <caption>Table 3</caption>
+        <tr>
+            <th colspan="6" bgcolor="aqua">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6" bgcolor="magenta">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>math</td>
+            <td>Arts</td>
+            
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+            
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td rowspan="2">project</td>
+            
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            background-color: bisque;
+            padding: 5rem;
+            /* display: flex; */
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* justify-content: center; */
+            justify-items: center;
+        }
+        .items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            height: 250px;
+            width: 250px;
+            background-color: aliceblue;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #rotateX:hover{
+            transform: rotatex(45deg);
+            transition-duration: .5s;
+        } 
+        
+        #rotateY:hover{
+            transform: rotatey(45deg);
+            transition-duration: .5s;
+        }
+
+        #rotateZ:hover{
+            transform: Rotatez(45deg);
+            transition-duration: .5s;
+        }
+
+        #TranslateX:hover{
+            transform: translateX(100px);
+            transition-duration: .5s;
+        }
+
+        #TranslateY:hover{
+            transform: translateY(-100px);
+            transition-duration: .5s;
+        }
+
+        #TranslateZ:hover{
+            transform:perspective(300px) translateZ(100px);
+            transition-duration: .5s;
+        }
+
+        #scaleX:hover{
+            transform: scalex(1.5);
+            transition-duration: .5s;
+        }
+
+        #scaleY:hover{
+            transform: scaley(1.5);
+            transition-duration: .5s;
+        }
+
+        #scaleZ:hover{
+            transform:perspective(300px) scalez(1.5) rotatey(20deg);
+            transition-duration: .5s;
+        }
+
+        #skewX:hover{
+            transform: skewx(30deg);
+            transition-duration: .5s;
+        }
+
+        #skewY:hover{
+            transform: skewy(30deg);
+            transition-duration: .5s;
+        }
+        
+        #skewX:hover{
+            transform: skewz(30deg);
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="rotateX">RotateX</div>
+        <div class="items" id="rotateY">RotateY</div>
+        <div class="items" id="rotateZ">RotateZ</div>
+        <div class="items" id="TranslateX">TranslateX</div>
+        <div class="items" id="TranslateY">TranslateY</div>
+        <div class="items" id="TranslateZ">TranslateZ</div>
+        <div class="items" id="scaleX">ScaleX</div>
+        <div class="items" id="scaleY">ScaleY</div>
+        <div class="items" id="scaleZ">ScaleZ</div>
+        <div class="items" id="skewX">SkewX</div>
+        <div class="items" id="skewY">SkewY</div>
+        <div class="items" id="skewZ">SkewZ</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background: #000;
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0px 0px 30px 3px #ff5e62;
+    border-radius: 50%;
+    top: 40px;
+    left: 35%;
+    animation: moving1 8s 0s ease alternate infinite ;
+}
+
+.ball2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0px 0px 30px 3px #a8c0ff;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 28%;
+    animation: moving2 8s 0s infinite alternate ease;
+}
+
+@keyframes moving1 {
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(50px) translateY(30px) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes moving2 {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px) translateY(-30px) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+.main-div{
+    border: solid 1px rgba(243, 233, 233, 0.24);
+    background: #f1e6e621;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 60px 40px;
+    border-radius: 15px;
+    z-index: 10;
+    /* width: 500px; */
+}
+
+.image-div{
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.my-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name-tag{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.808);
+}
+.profession{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.658);
+    font-weight: 700;
+}
+
+.btn-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+    color: rgba(255, 255, 255, 0.808);
+
+}
+.btn{
+    border: solid 1px  rgba(255, 255, 255, 0.678);
+    border-radius: 5px;
+    padding: 8px 0px;
+    width: 170px;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.685);
+    color: #000;
+}
+
+.btn2{
+    width: 50%;
+    font-size: .2rem;
+}
+.btn2{
+    width: 50%;
+}
+.modal-div{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.767);
+    z-index: 20;
+    background: #000000be;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    /* max-width: 500px; */
+    scale: 0;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.active{
+    scale: 1;
+}
+
+.overlay{
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+.overlayactive{
+    opacity: 1;
+    pointer-events: initial
+    ;
+
+}
+
+
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+
+    h1{
+        font-size: 2.5rem;
+    }
+    .cross{
+        font-size: 1.7rem;
+    }
+
+}
+
+.sub-heading{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.links-div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    gap: 60px;
+    padding-bottom: 20px;
+}
+
+.cross{
+    cursor: pointer;
+}
+
+.link-icon{
+    border: solid 1px #ffffffa1;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all .2s ease;
+}
+.link-icon:hover{
+    background:rgba(255, 255, 255, 0.301);
+}

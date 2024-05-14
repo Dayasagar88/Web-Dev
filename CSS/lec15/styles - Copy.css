@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.name_cont{
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+
+    .name_logo{
+        width: 60px;
+        height:60px;
+    }
+    .logo_text{
+        position: relative;
+        top: 5px;
+        font-size: 3.5rem;
+        font-family: "Nunito", sans-serif;
+        font-weight:bold;
+        color: rgba(0, 0, 0, 0.767);
+    }
+
+}
+.nav_items{
+    display: flex;
+    gap: 3rem;
+
+    .item a{
+        font-size: 1.2rem;
+        font-family: "nunito";
+        font-weight: bold;
+        color: black;
+        }
+        
+        .item:hover{
+            transform: scalex(1.1);
+    }
+}
+/* /////////////////////////////////*/
+
+
+.hero_section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+
+    /* gap: 5rem; */
+    /* margin: 4rem auto; */
+    /* padding: 0 1rem; */
+    /* padding-bottom: 1000px; */
+}
+.fadded_text{
+    position: absolute;
+    user-select: none;
+    font-size: 7rem;
+    color: rgba(0, 0, 0, 0.158);
+
+    bottom: -35%;
+    left: -14%;
+    font-weight: bold;
+    /* transition: all 3s; */
+}
+
+.hero_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.hero_head{
+    font-family: "nunito";
+    font-size: 3rem;
+}
+.hero_desc{
+    width: 500px;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.726);
+    text-align: justify;
+}
+#hire{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.btn{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    /* border: solid 1px; */
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 12px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    z-index: 1;
+  
+  
+    a{
+      color: white;
+    }
+  }
+  
+  .btn::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scalex(0);
+    transition: all .3s;
+    z-index: -1;
+  }
+  
+  .btn:hover::before{
+    transform: scalex(1);
+  }
+
+  .hero_right{
+    position: relative;
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+  }
+
+  .absolute{
+    position: absolute;
+  }
+
+  .user_image{
+    padding: 2rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleimage 5s linear infinite;
+  }
+
+  .user_image img{
+    z-index: -9;
+    width: 270px;
+  }
+
+  @keyframes scaleimage{
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+  }
+
+  .image4{
+    z-index: 9;
+    bottom: 0;
+    right: -30px;
+    transform: scale(1);
+    animation: image4animation 5s linear infinite;
+  }
+  @keyframes image4animation{
+    0%{
+        transform: rotatey(0deg) scale(1);
+    }
+    50%{
+        transform: rotatey(180deg) scale(1.05);
+    }
+    100%{
+        transform: rotatey(360deg) scale(1);
+    }
+  }
+
+  .image3{
+    z-index: 9;
+    bottom: 430px;
+    right: 10px;
+    transform: scale(1);
+    animation: image3animation 5s linear infinite;
+  }
+  @keyframes image3animation{
+    0%{
+        transform: rotatex(0deg) scale(1);
+    }
+    50%{
+        transform: rotatex(180deg) scale(1.05);
+    }
+    100%{
+        transform: rotatex(360deg) scale(1);
+    }
+  }
+
+  .image2{
+    z-index: 9;
+    bottom: 1;
+    left: 0;
+    transform: scale(1);
+    animation: image2animation 5s linear infinite;
+  }
+  @keyframes image2animation{
+    0%{
+        transform: rotatez(0deg) scale(1);
+    }
+    50%{
+        transform: rotatez(180deg) scale(1.05);
+    }
+    100%{
+        transform: rotatez(360deg) scale(1);
+    }
+  }
+
+  .image1{
+    width: 20px;
+    z-index: 9;
+    bottom: 100px;
+    left: -30px;
+    transform: scale(1);
+    animation: image1animation 5s linear infinite;
+  }
+  @keyframes image1animation{
+    0%{
+        transform:  scale(1);
+    }
+    50%{
+        transform:  scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+  /* ///////////////////////////////////////// */
+
+
+
+  .projects_section{
+    margin-top: 250px;
+  }

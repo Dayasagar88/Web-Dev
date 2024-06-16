@@ -1,0 +1,15 @@
+.alert{
+    position: fixed;
+    width: 100%;
+    transition: all 2s 0s ease-in;
+    animation: visible alternate;
+    scale: 1;
+}
+/* @keyframes visible {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+} */

@@ -1,0 +1,11 @@
+.btn{
+    background-color: rgba(0, 81, 255, 0.808);
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+.btn:hover{
+    background: rgba(0, 81, 255, 0.585);
+}
+.textForm{
+    margin-top: 60px;
+}
